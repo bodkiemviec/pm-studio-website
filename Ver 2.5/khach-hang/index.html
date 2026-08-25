@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tổng quan — Khách hàng | PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<div class="app">
+  <aside class="app__sidebar">
+    <a href="../index.html" class="app__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+    <p class="app__role">Khách hàng</p>
+
+    <nav class="app__nav" aria-label="Điều hướng khách hàng">
+      <a href="index.html" class="app__nav-link" aria-current="page"><span class="app__nav-icon">◆</span> Tổng quan</a>
+      <a href="du-an.html" class="app__nav-link"><span class="app__nav-icon">01</span> Dự án</a>
+      <a href="tai-lieu.html" class="app__nav-link"><span class="app__nav-icon">02</span> Tài liệu</a>
+      <a href="tien-do.html" class="app__nav-link"><span class="app__nav-icon">03</span> Tiến độ</a>
+      <a href="chinh-sua.html" class="app__nav-link"><span class="app__nav-icon">04</span> Chỉnh sửa</a>
+      <a href="thanh-toan.html" class="app__nav-link"><span class="app__nav-icon">05</span> Thanh toán</a>
+    </nav>
+
+    <div class="app__sidebar-foot">
+      <span class="app__signout"><span id="customer-name">Đang tải...</span> · <a href="../dang-nhap.html" class="app__signout" id="signout-link">Đăng xuất</a></span>
+    </div>
+  </aside>
+
+  <main id="main-content" class="app__main">
+    <div class="app__topbar">
+      <div>
+        <h1 class="app__title" id="greeting-title">Chào bạn 👋</h1>
+        <p class="app__subtitle">Đây là tình hình dự án website của bạn tính đến hôm nay.</p>
+      </div>
+      <a href="tien-do.html#dat-lich" class="btn btn--primary">Đặt lịch tư vấn mới</a>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <p class="stat-card__label">Dự án đang chạy</p>
+        <p class="stat-card__value" id="stat-du-an-dang-chay">–</p>
+        <p class="stat-card__delta" id="stat-du-an-ten">Đang tải dữ liệu...</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Tiến độ tổng thể</p>
+        <p class="stat-card__value" id="stat-tien-do">–</p>
+        <p class="stat-card__delta stat-card__delta--up" id="stat-tien-do-ghi-chu">Đang tải dữ liệu...</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Lượt chỉnh sửa còn lại</p>
+        <p class="stat-card__value">2</p>
+        <p class="stat-card__delta">Trong gói Mẫu + tư vấn 1-1</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Thanh toán</p>
+        <p class="stat-card__value" id="stat-thanh-toan">–</p>
+        <p class="stat-card__delta stat-card__delta--warn" id="stat-thanh-toan-ghi-chu">Đang tải dữ liệu...</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel__head">
+        <h2>Việc cần bạn xác nhận</h2>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr><th>Nội dung</th><th>Dự án</th><th>Hạn phản hồi</th><th>Trạng thái</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Duyệt bản nháp trang chủ</td>
+              <td>Bún Cô Sáu</td>
+              <td>25/08/2026</td>
+              <td><span class="badge badge--wait">Chờ bạn duyệt</span></td>
+              <td class="data-table__actions"><a href="chinh-sua.html" class="link-action">Xem bản nháp</a></td>
+            </tr>
+            <tr>
+              <td>Thanh toán đợt 2</td>
+              <td>Bún Cô Sáu</td>
+              <td>28/08/2026</td>
+              <td><span class="badge badge--overdue">Sắp đến hạn</span></td>
+              <td class="data-table__actions"><a href="thanh-toan.html" class="link-action">Thanh toán</a></td>
+            </tr>
+            <tr>
+              <td>Gửi ảnh món ăn còn thiếu</td>
+              <td>Bún Cô Sáu</td>
+              <td>26/08/2026</td>
+              <td><span class="badge badge--wait">Đang chờ</span></td>
+              <td class="data-table__actions"><a href="tai-lieu.html" class="link-action">Tải lên</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel__head"><h2>Cập nhật gần đây</h2></div>
+      <div class="timeline">
+        <div class="timeline__item timeline__item--active">
+          <p class="timeline__date">22/08/2026</p>
+          <p class="timeline__title">Bản nháp trang thực đơn đã sẵn sàng</p>
+          <p class="timeline__desc">Đội thiết kế đã cập nhật danh mục món theo ảnh bạn gửi tuần trước.</p>
+        </div>
+        <div class="timeline__item timeline__item--done">
+          <p class="timeline__date">18/08/2026</p>
+          <p class="timeline__title">Hoàn tất buổi tư vấn 1-1</p>
+          <p class="timeline__desc">Đã thống nhất phong cách ấm áp, tông cam và bố cục 1 trang.</p>
+        </div>
+        <div class="timeline__item timeline__item--done">
+          <p class="timeline__date">14/08/2026</p>
+          <p class="timeline__title">Đã nhận thanh toán đợt 1</p>
+          <p class="timeline__desc">1.645.000đ — 50% giá trị gói Mẫu + tư vấn 1-1.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../api.js"></script>
+<script src="../ui.js"></script>
+<script src="../auth-guard.js" data-role="khach_hang" data-login-path="../dang-nhap.html"></script>
+<script src="index.js"></script>
+</body>
+</html>

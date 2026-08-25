@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chỉnh sửa — Khách hàng | PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<div class="app">
+  <aside class="app__sidebar">
+    <a href="../index.html" class="app__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+    <p class="app__role">Khách hàng</p>
+
+    <nav class="app__nav" aria-label="Điều hướng khách hàng">
+      <a href="index.html" class="app__nav-link"><span class="app__nav-icon">◆</span> Tổng quan</a>
+      <a href="du-an.html" class="app__nav-link"><span class="app__nav-icon">01</span> Dự án</a>
+      <a href="tai-lieu.html" class="app__nav-link"><span class="app__nav-icon">02</span> Tài liệu</a>
+      <a href="tien-do.html" class="app__nav-link"><span class="app__nav-icon">03</span> Tiến độ</a>
+      <a href="chinh-sua.html" class="app__nav-link" aria-current="page"><span class="app__nav-icon">04</span> Chỉnh sửa</a>
+      <a href="thanh-toan.html" class="app__nav-link"><span class="app__nav-icon">05</span> Thanh toán</a>
+    </nav>
+
+    <div class="app__sidebar-foot">
+      <span class="app__signout">Bún Cô Sáu · <a href="../dang-nhap.html" class="app__signout">Đăng xuất</a></span>
+    </div>
+  </aside>
+
+  <main id="main-content" class="app__main">
+    <div class="app__topbar">
+      <div>
+        <h1 class="app__title">Yêu cầu chỉnh sửa</h1>
+        <p class="app__subtitle">Gói của bạn còn 2 lượt chỉnh sửa sau bản nháp.</p>
+      </div>
+      <button type="button" class="btn btn--primary">Gửi yêu cầu mới</button>
+    </div>
+
+    <div class="panel">
+      <div class="panel__head">
+        <h2>Bản nháp trang chủ</h2>
+        <span class="badge badge--wait" id="draft-status-badge">Chờ bạn duyệt</span>
+      </div>
+      <p style="color:var(--text-soft); margin-bottom:1.2rem;">Đội thiết kế đã hoàn thiện bản nháp trang chủ theo phong cách đã thống nhất ở buổi tư vấn. Xem và để lại góp ý bên dưới, hoặc duyệt nếu đã ưng ý.</p>
+      <div class="hero__actions">
+        <button type="button" class="btn btn--primary" id="approve-draft-btn">Duyệt bản nháp</button>
+        <button type="button" class="btn btn--ghost" id="request-edit-btn">Yêu cầu chỉnh sửa</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel__head"><h2>Lịch sử góp ý</h2></div>
+
+      <div id="comment-list">
+        <div class="comment">
+          <p class="comment__head"><strong>Bạn</strong> · 21/08/2026</p>
+          <p class="comment__body">Nhờ đổi ảnh bìa trang chủ sang ảnh quán buổi tối, ánh sáng ấm hơn ảnh ban ngày hiện tại.</p>
+        </div>
+        <div class="comment">
+          <p class="comment__head"><strong>Đội thiết kế</strong> · 22/08/2026</p>
+          <p class="comment__body">Đã cập nhật ảnh bìa theo yêu cầu, mời bạn xem lại bản nháp mới nhất ở trên.</p>
+        </div>
+        <div class="comment">
+          <p class="comment__head"><strong>Bạn</strong> · 16/08/2026</p>
+          <p class="comment__body">Thực đơn cần chia thành 3 nhóm: món chính, món phụ và nước uống.</p>
+        </div>
+        <div class="comment">
+          <p class="comment__head"><strong>Đội thiết kế</strong> · 17/08/2026</p>
+          <p class="comment__body">Đã tách thực đơn thành 3 danh mục như bạn yêu cầu.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../api.js"></script>
+<script src="../ui.js"></script>
+<script src="../auth-guard.js" data-role="khach_hang" data-login-path="../dang-nhap.html"></script>
+<script src="chinh-sua.js"></script>
+</body>
+        </html>

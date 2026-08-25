@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tổng quan — Quản trị | PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<div class="app">
+  <aside class="app__sidebar">
+    <a href="../index.html" class="app__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+    <p class="app__role">Quản trị</p>
+
+    <nav class="app__nav" aria-label="Điều hướng quản trị">
+      <a href="index.html" class="app__nav-link" aria-current="page"><span class="app__nav-icon">◆</span> Tổng quan</a>
+      <a href="mau-website.html" class="app__nav-link"><span class="app__nav-icon">01</span> Mẫu website</a>
+      <a href="khach-hang.html" class="app__nav-link"><span class="app__nav-icon">02</span> Khách hàng</a>
+      <a href="du-an.html" class="app__nav-link"><span class="app__nav-icon">03</span> Dự án</a>
+      <a href="don-hang.html" class="app__nav-link"><span class="app__nav-icon">04</span> Đơn hàng</a>
+      <a href="tu-van.html" class="app__nav-link"><span class="app__nav-icon">05</span> Tư vấn</a>
+    </nav>
+
+    <div class="app__sidebar-foot">
+      <span class="app__signout"><span id="admin-name">Quản trị viên</span> · <a href="dang-nhap.html" class="app__signout" id="signout-link">Đăng xuất</a></span>
+    </div>
+  </aside>
+
+  <main id="main-content" class="app__main">
+    <div class="app__topbar">
+      <div>
+        <h1 class="app__title">Tổng quan vận hành</h1>
+        <p class="app__subtitle">Tình hình đơn hàng, dự án và tư vấn của PM STUDIO hôm nay.</p>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <p class="stat-card__label">Dự án đang chạy</p>
+        <p class="stat-card__value" id="stat-du-an-dang-chay">–</p>
+        <p class="stat-card__delta" id="stat-du-an-tong">Đang tải...</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Đơn hàng mới</p>
+        <p class="stat-card__value" id="stat-don-hang-moi">–</p>
+        <p class="stat-card__delta stat-card__delta--warn">Cần xác nhận</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Lịch tư vấn sắp tới</p>
+        <p class="stat-card__value" id="stat-tu-van-sap-toi">–</p>
+        <p class="stat-card__delta" id="stat-tu-van-ghi-chu">Đang tải...</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Doanh thu tháng 08</p>
+        <p class="stat-card__value">38,4tr</p>
+        <p class="stat-card__delta stat-card__delta--up">Trên 12 dự án</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel__head">
+        <h2>Việc cần xử lý</h2>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr><th>Việc</th><th>Khách hàng</th><th>Loại</th><th>Trạng thái</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Xác nhận đơn hàng mẫu Cà phê</td>
+              <td>Lối Nhỏ Coffee</td>
+              <td>Đơn hàng</td>
+              <td><span class="badge badge--wait">Chờ xác nhận</span></td>
+              <td class="data-table__actions"><a href="don-hang.html" class="link-action">Xử lý</a></td>
+            </tr>
+            <tr>
+              <td>Duyệt bản nháp trang chủ</td>
+              <td>Bún Cô Sáu</td>
+              <td>Dự án</td>
+              <td><span class="badge badge--progress">Đang chờ khách duyệt</span></td>
+              <td class="data-table__actions"><a href="du-an.html" class="link-action">Xem</a></td>
+            </tr>
+            <tr>
+              <td>Buổi tư vấn 14:00 hôm nay</td>
+              <td>Hải Đăng Kế Toán</td>
+              <td>Tư vấn</td>
+              <td><span class="badge badge--progress">Sắp diễn ra</span></td>
+              <td class="data-table__actions"><a href="tu-van.html" class="link-action">Chi tiết</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../api.js"></script>
+<script src="../ui.js"></script>
+<script src="../auth-guard.js" data-role="admin" data-login-path="dang-nhap.html"></script>
+<script src="index.js"></script>
+</body>
+</html>

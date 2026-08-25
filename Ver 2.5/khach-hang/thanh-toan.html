@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh toán — Khách hàng | PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<div class="app">
+  <aside class="app__sidebar">
+    <a href="../index.html" class="app__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+    <p class="app__role">Khách hàng</p>
+
+    <nav class="app__nav" aria-label="Điều hướng khách hàng">
+      <a href="index.html" class="app__nav-link"><span class="app__nav-icon">◆</span> Tổng quan</a>
+      <a href="du-an.html" class="app__nav-link"><span class="app__nav-icon">01</span> Dự án</a>
+      <a href="tai-lieu.html" class="app__nav-link"><span class="app__nav-icon">02</span> Tài liệu</a>
+      <a href="tien-do.html" class="app__nav-link"><span class="app__nav-icon">03</span> Tiến độ</a>
+      <a href="chinh-sua.html" class="app__nav-link"><span class="app__nav-icon">04</span> Chỉnh sửa</a>
+      <a href="thanh-toan.html" class="app__nav-link" aria-current="page"><span class="app__nav-icon">05</span> Thanh toán</a>
+    </nav>
+
+    <div class="app__sidebar-foot">
+      <span class="app__signout"><span id="sidebar-customer-name">Đang tải...</span> · <a href="../dang-nhap.html" class="app__signout">Đăng xuất</a></span>
+    </div>
+  </aside>
+
+  <main id="main-content" class="app__main">
+    <div class="app__topbar">
+      <div>
+        <h1 class="app__title">Thanh toán</h1>
+        <p class="app__subtitle" id="payment-subtitle">Đang tải dữ liệu...</p>
+      </div>
+    </div>
+
+    <div class="stat-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="stat-card">
+        <p class="stat-card__label">Đã thanh toán</p>
+        <p class="stat-card__value" id="paid-amount">–</p>
+        <p class="stat-card__delta stat-card__delta--up" id="paid-note">Đang tải...</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Còn lại</p>
+        <p class="stat-card__value" id="remaining-amount">–</p>
+        <p class="stat-card__delta stat-card__delta--warn" id="remaining-note">Đang tải...</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-card__label">Phương thức</p>
+        <p class="stat-card__value" style="font-size:1.2rem;">Chuyển khoản</p>
+        <p class="stat-card__delta">Xác nhận thủ công bởi PM STUDIO</p>
+      </div>
+    </div>
+
+    <div class="panel" id="pending-payment-panel" style="display:none;">
+      <div class="panel__head">
+        <h2 id="pending-payment-title">—</h2>
+        <span class="badge badge--overdue">Chưa thanh toán</span>
+      </div>
+      <p style="color:var(--text-soft); margin-bottom:1.2rem;">Thanh toán trước khi website được đưa lên tên miền chính thức của bạn.</p>
+      <button
+        type="button"
+        class="btn btn--primary"
+        style="width:auto;"
+        id="pay-now-btn"
+      >Thanh toán ngay</button>
+    </div>
+
+    <div class="panel">
+      <div class="panel__head"><h2>Lịch sử thanh toán</h2></div>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr><th>Đợt</th><th>Số tiền</th><th>Ngày</th><th>Trạng thái</th><th></th></tr>
+          </thead>
+          <tbody id="payment-history-tbody">
+            <tr><td colspan="5" style="color:var(--text-soft);">Đang tải dữ liệu...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../api.js"></script>
+<script src="../ui.js"></script>
+<script src="../auth-guard.js" data-role="khach_hang" data-login-path="../dang-nhap.html"></script>
+<script src="thanh-toan.js"></script>
+</body>
+</html>

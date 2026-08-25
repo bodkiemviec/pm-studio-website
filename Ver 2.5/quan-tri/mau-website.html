@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mẫu website — Quản trị | PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<div class="app">
+  <aside class="app__sidebar">
+    <a href="../index.html" class="app__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+    <p class="app__role">Quản trị</p>
+
+    <nav class="app__nav" aria-label="Điều hướng quản trị">
+      <a href="index.html" class="app__nav-link"><span class="app__nav-icon">◆</span> Tổng quan</a>
+      <a href="mau-website.html" class="app__nav-link" aria-current="page"><span class="app__nav-icon">01</span> Mẫu website</a>
+      <a href="khach-hang.html" class="app__nav-link"><span class="app__nav-icon">02</span> Khách hàng</a>
+      <a href="du-an.html" class="app__nav-link"><span class="app__nav-icon">03</span> Dự án</a>
+      <a href="don-hang.html" class="app__nav-link"><span class="app__nav-icon">04</span> Đơn hàng</a>
+      <a href="tu-van.html" class="app__nav-link"><span class="app__nav-icon">05</span> Tư vấn</a>
+    </nav>
+
+    <div class="app__sidebar-foot">
+      <span class="app__signout">Quản trị viên · <a href="dang-nhap.html" class="app__signout">Đăng xuất</a></span>
+    </div>
+  </aside>
+
+  <main id="main-content" class="app__main">
+    <div class="app__topbar">
+      <div>
+        <h1 class="app__title">Mẫu website</h1>
+        <p class="app__subtitle">Quản lý các mẫu đang hiển thị công khai trên trang chủ.</p>
+      </div>
+      <button type="button" class="btn btn--primary">Thêm mẫu mới</button>
+    </div>
+
+    <div class="template-grid">
+
+      <article class="pattern-card pattern-card--qa">
+        <span class="pattern-card__code">No. 01–QA</span>
+        <div class="mockup mockup--qa">
+          <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+          <div class="mockup__bar mockup__bar--wide"></div>
+          <div class="mockup__bar mockup__bar--mid"></div>
+          <div class="mockup__grid"><i></i><i></i><i></i></div>
+        </div>
+        <h3 class="pattern-card__label">Quán ăn</h3>
+        <p class="pattern-card__desc">4 dự án đang dùng mẫu này · Đang hoạt động</p>
+        <a href="mau-website.html" class="pattern-card__link">Chỉnh sửa mẫu →</a>
+      </article>
+
+      <article class="pattern-card pattern-card--cf">
+        <span class="pattern-card__code">No. 02–CF</span>
+        <div class="mockup mockup--cf">
+          <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+          <div class="mockup__bar mockup__bar--wide"></div>
+          <div class="mockup__grid"><i></i><i></i></div>
+        </div>
+        <h3 class="pattern-card__label">Cà phê</h3>
+        <p class="pattern-card__desc">3 dự án đang dùng mẫu này · Đang hoạt động</p>
+        <a href="mau-website.html" class="pattern-card__link">Chỉnh sửa mẫu →</a>
+      </article>
+
+      <article class="pattern-card pattern-card--gy">
+        <span class="pattern-card__code">No. 03–GY</span>
+        <div class="mockup mockup--gy">
+          <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+          <div class="mockup__bar mockup__bar--wide"></div>
+          <div class="mockup__bar mockup__bar--mid"></div>
+        </div>
+        <h3 class="pattern-card__label">Phòng gym</h3>
+        <p class="pattern-card__desc">2 dự án đang dùng mẫu này · Đang hoạt động</p>
+        <a href="mau-website.html" class="pattern-card__link">Chỉnh sửa mẫu →</a>
+      </article>
+
+      <article class="pattern-card pattern-card--vp">
+        <span class="pattern-card__code">No. 04–VP</span>
+        <div class="mockup mockup--vp">
+          <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+          <div class="mockup__bar mockup__bar--wide"></div>
+          <div class="mockup__bar mockup__bar--mid"></div>
+          <div class="mockup__grid"><i></i><i></i><i></i></div>
+        </div>
+        <h3 class="pattern-card__label">Doanh nghiệp</h3>
+        <p class="pattern-card__desc">1 dự án đang dùng mẫu này · Đang hoạt động</p>
+        <a href="mau-website.html" class="pattern-card__link">Chỉnh sửa mẫu →</a>
+      </article>
+
+    </div>
+  </main>
+</div>
+
+<script src="../api.js"></script>
+<script src="../ui.js"></script>
+<script src="../auth-guard.js" data-role="admin" data-login-path="dang-nhap.html"></script>
+<script src="../script.js"></script>
+</body>
+</html>

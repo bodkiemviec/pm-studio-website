@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mẫu Quán ăn (No. 01–QA) — PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Điều hướng chính">
+      <a href="../index.html#mau-rap" class="nav__link">Mẫu website</a>
+      <a href="../index.html#do-may" class="nav__link">Tư vấn 1-1</a>
+      <a href="../index.html#bang-gia" class="nav__link">Bảng giá</a>
+      <a href="../index.html#da-may" class="nav__link">Những website đã được triển khai</a>
+      <a href="../dang-nhap.html" class="nav__link nav__link--mobile-login">Đăng nhập</a>
+    </nav>
+
+    <a href="../dang-nhap.html" class="nav__login">Đăng nhập →</a>
+
+    <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div class="subhead">
+    <p class="breadcrumb">
+      <a href="../index.html">Trang chủ</a><span>/</span>
+      <a href="../index.html#mau-rap">Mẫu website</a><span>/</span>
+      <span aria-current="page">Quán ăn — No. 01–QA</span>
+    </p>
+  </div>
+
+  <!-- DETAIL HERO -->
+  <section class="detail-hero">
+    <div>
+      <span class="detail-hero__code">No. 01–QA</span>
+      <h1 class="detail-hero__title">Mẫu website Quán ăn</h1>
+      <p class="detail-hero__desc">Thực đơn nổi bật ngay trang chủ, đặt bàn nhanh trong vài giây và khu vực đánh giá món giúp khách mới tin tưởng trước khi ghé quán.</p>
+      <div class="detail-hero__tags">
+        <span class="tag">Đặt bàn online</span>
+        <span class="tag">Thực đơn có hình ảnh</span>
+        <span class="tag">Đánh giá món ăn</span>
+        <span class="tag">Tối ưu di động</span>
+      </div>
+      <div class="hero__actions">
+        <a href="#dat-hang" class="btn btn--primary">Đặt mẫu này</a>
+        <a href="../index.html#mau-rap" class="btn btn--ghost">Xem mẫu khác</a>
+      </div>
+    </div>
+
+    <div class="detail-hero__preview">
+      <div class="mockup mockup--qa">
+        <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+        <div class="mockup__bar mockup__bar--wide"></div>
+        <div class="mockup__bar mockup__bar--mid"></div>
+        <div class="mockup__grid"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAIL BODY + ORDER FORM -->
+  <section class="detail-sections">
+    <div>
+
+      <div class="detail-block">
+        <h3>Mẫu này phù hợp với ai</h3>
+        <p>Quán ăn gia đình, quán cơm văn phòng, quán nhậu hoặc chuỗi 2–3 chi nhánh muốn khách xem thực đơn và đặt bàn mà không cần gọi điện.</p>
+      </div>
+
+      <div class="detail-block">
+        <h3>Các phần có sẵn</h3>
+        <ul class="detail-feature-list">
+          <li>Trang chủ giới thiệu quán, giờ mở cửa, bản đồ chỉ đường</li>
+          <li>Thực đơn theo danh mục, có ảnh và giá từng món</li>
+          <li>Biểu mẫu đặt bàn theo khung giờ, gửi thông báo qua Zalo/SMS</li>
+          <li>Khu vực đánh giá và ảnh do khách hàng gửi lên</li>
+          <li>Trang liên hệ và tích hợp mạng xã hội</li>
+        </ul>
+      </div>
+
+      <div class="detail-block">
+        <h3>Thời gian bàn giao</h3>
+        <p>3–5 ngày làm việc kể từ khi nhận đủ nội dung (ảnh món ăn, giá, thông tin quán). Nếu chọn gói có tư vấn 1-1, thời gian tính từ sau buổi tư vấn.</p>
+      </div>
+
+    </div>
+
+    <!-- ORDER / CUSTOMIZE CARD -->
+    <aside class="order-card" id="dat-hang">
+      <p class="order-card__eyebrow">Đặt mẫu / Tùy chỉnh</p>
+      <p class="order-card__price" id="gia-hien-thi">1.490.000đ</p>
+
+      <form action="dat-hang-thanh-cong.html" id="order-form" novalidate>
+        <div class="field">
+          <label for="ten-quan">Tên quán</label>
+          <input type="text" id="ten-quan" name="ten-quan" placeholder="VD: Bún Cô Sáu" required>
+        </div>
+
+        <div class="field">
+          <label for="goi-dich-vu">Chọn gói</label>
+          <select id="goi-dich-vu" name="goi-dich-vu">
+            <option value="1490000">Website theo mẫu — 1.490.000đ</option>
+            <option value="3290000">Mẫu + tư vấn 1-1 — 3.290.000đ</option>
+            <option value="6990000">Trọn gói — 6.990.000đ</option>
+            <option value="tuy-chon">Tự đề xuất mức giá &amp; Yêu cầu riêng</option>
+          </select>
+        </div>
+
+        <div class="field" id="gia-de-xuat-field" hidden>
+          <label for="gia-de-xuat">Mức giá bạn đề xuất</label>
+          <input type="text" id="gia-de-xuat" name="gia-de-xuat" inputmode="numeric" placeholder="VD: 2.000.000">
+        </div>
+
+        <div class="field">
+          <label>Màu chủ đạo</label>
+          <div class="swatch-row" role="group" aria-label="Chọn màu chủ đạo">
+            <button type="button" class="swatch" style="background:var(--orange)" aria-pressed="true" aria-label="Cam"></button>
+            <button type="button" class="swatch" style="background:var(--lime)" aria-pressed="false" aria-label="Xanh chanh"></button>
+            <button type="button" class="swatch" style="background:var(--blue)" aria-pressed="false" aria-label="Xanh dương"></button>
+            <button type="button" class="swatch" style="background:var(--violet)" aria-pressed="false" aria-label="Tím"></button>
+          </div>
+          <input type="hidden" name="mau-chu-dao" id="mau-chu-dao-input" value="Cam">
+        </div>
+
+        <div class="field">
+          <label for="ghi-chu">Ghi chú thêm</label>
+          <textarea id="ghi-chu" name="ghi-chu" placeholder="Mô tả phong cách quán, yêu cầu riêng nếu có..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Xác nhận đặt mẫu</button>
+      </form>
+
+      <p class="order-card__fine">Bạn sẽ nhận email xác nhận và bước tiếp theo trong vòng 24 giờ.</p>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="nav__brand-mark">PM</span>
+      <p>Studio thiết kế và xây dựng website cho quán ăn, quán cà phê, phòng gym và doanh nghiệp nhỏ. Chọn mẫu, tùy chỉnh riêng, sẵn sàng vận hành.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Website theo ngành</h4>
+      <a href="../index.html#mau-rap" class="footer__link">Quán ăn</a>
+      <a href="../index.html#mau-rap" class="footer__link">Cà phê</a>
+      <a href="../index.html#mau-rap" class="footer__link">Phòng gym</a>
+      <a href="../index.html#mau-rap" class="footer__link">Doanh nghiệp</a>
+    </div>
+    <div class="footer__col">
+      <h4>Dịch vụ</h4>
+      <a href="../tu-van/dat-lich.html" class="footer__link">Tư vấn 1-1</a>
+      <a href="../index.html#bang-gia" class="footer__link">Bảng giá</a>
+      <a href="../index.html#da-may" class="footer__link">Những website đã được triển khai</a>
+    </div>
+    <div class="footer__col">
+      <h4>Tài khoản</h4>
+      <a href="../dang-nhap.html" class="footer__link">Đăng nhập khách hàng</a>
+      <a href="../quan-tri/dang-nhap.html" class="footer__link">Đăng nhập quản trị</a>
+    </div>
+    <div class="footer__col">
+      <h4>Pháp lý</h4>
+      <a href="../dieu-khoan.html" class="footer__link">Điều khoản dịch vụ</a>
+      <a href="../chinh-sach-bao-mat.html" class="footer__link">Chính sách bảo mật</a>
+      <a href="../chinh-sach-hoan-tien.html" class="footer__link">Chính sách hoàn tiền</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 PM STUDIO. Website số 01.</span>
+    <span>Thiết kế cho riêng doanh nghiệp của bạn, không phải một website dùng cho tất cả.</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="../ui.js"></script>
+<script src="chi-tiet.js"></script>
+</body>
+</html>

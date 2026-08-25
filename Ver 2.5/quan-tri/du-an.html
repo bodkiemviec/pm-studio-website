@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dự án — Quản trị | PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<div class="app">
+  <aside class="app__sidebar">
+    <a href="../index.html" class="app__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+    <p class="app__role">Quản trị</p>
+
+    <nav class="app__nav" aria-label="Điều hướng quản trị">
+      <a href="index.html" class="app__nav-link"><span class="app__nav-icon">◆</span> Tổng quan</a>
+      <a href="mau-website.html" class="app__nav-link"><span class="app__nav-icon">01</span> Mẫu website</a>
+      <a href="khach-hang.html" class="app__nav-link"><span class="app__nav-icon">02</span> Khách hàng</a>
+      <a href="du-an.html" class="app__nav-link" aria-current="page"><span class="app__nav-icon">03</span> Dự án</a>
+      <a href="don-hang.html" class="app__nav-link"><span class="app__nav-icon">04</span> Đơn hàng</a>
+      <a href="tu-van.html" class="app__nav-link"><span class="app__nav-icon">05</span> Tư vấn</a>
+    </nav>
+
+    <div class="app__sidebar-foot">
+      <span class="app__signout"><span id="sidebar-admin-name">Quản trị viên</span> · <a href="dang-nhap.html" class="app__signout">Đăng xuất</a></span>
+    </div>
+  </aside>
+
+  <main id="main-content" class="app__main">
+    <div class="app__topbar">
+      <div>
+        <h1 class="app__title">Dự án</h1>
+        <p class="app__subtitle" id="project-count-subtitle">Đang tải dữ liệu...</p>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <input type="search" id="filter-search" placeholder="Tìm theo tên dự án...">
+      <select id="filter-trang-thai">
+        <option>Tất cả trạng thái</option>
+        <option>Đang thực hiện</option>
+        <option>Hoàn thành</option>
+        <option>Tạm dừng</option>
+      </select>
+    </div>
+
+    <div class="panel">
+      <div class="table-scroll">
+        <table class="data-table" id="project-table">
+          <thead>
+            <tr><th>Dự án</th><th>Loại</th><th>Tiến độ</th><th>Trạng thái</th><th>Bắt đầu</th><th></th></tr>
+          </thead>
+          <tbody id="project-table-body">
+            <tr><td colspan="6" style="color:var(--text-soft);">Đang tải dữ liệu...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../api.js"></script>
+<script src="../ui.js"></script>
+<script src="../auth-guard.js" data-role="admin" data-login-path="dang-nhap.html"></script>
+<script src="du-an.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt lịch tư vấn 1-1 — PM STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  /* Bổ sung style nhỏ cho dấu sao bắt buộc (text-danger) */
+  .text-danger { color: #dc3545; }
+  .w-100 { width: 100%; }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Bỏ qua, đi tới nội dung chính</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand"><span class="nav__brand-mark">PM</span> STUDIO</a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Điều hướng chính">
+      <a href="../index.html#mau-rap" class="nav__link">Mẫu website</a>
+      <a href="../index.html#do-may" class="nav__link">Tư vấn 1-1</a>
+      <a href="../index.html#bang-gia" class="nav__link">Bảng giá</a>
+      <a href="../index.html#da-may" class="nav__link">Những website đã được triển khai</a>
+      <a href="../dang-nhap.html" class="nav__link nav__link--mobile-login">Đăng nhập</a>
+    </nav>
+
+    <a href="../dang-nhap.html" class="nav__login">Đăng nhập →</a>
+
+    <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div class="subhead">
+    <p class="breadcrumb">
+      <a href="../index.html">Trang chủ</a><span>/</span>
+      <a href="../index.html#do-may">Tư vấn 1-1</a><span>/</span>
+      <span aria-current="page">Đặt lịch</span>
+    </p>
+  </div>
+
+  <section class="detail-hero">
+    <div>
+      <span class="detail-hero__code">PROJECT CALL — 45 PHÚT</span>
+      <h1 class="detail-hero__title">Đặt lịch tư vấn 1-1</h1>
+      <p class="detail-hero__desc">Chọn ngày giờ phù hợp, cho chúng tôi biết một chút về việc kinh doanh của bạn — chúng tôi sẽ chuẩn bị trước để buổi trao đổi đi thẳng vào việc chọn mẫu và định hướng nội dung.</p>
+      <ul class="stub__list">
+        <li>Cùng xem và đánh giá mẫu website phù hợp với doanh nghiệp</li>
+        <li>Thống nhất phong cách, màu sắc và hình ảnh thương hiệu</li>
+        <li>Nhận bản đề xuất website trong vòng 48 giờ sau buổi tư vấn</li>
+      </ul>
+    </div>
+
+    <div class="detail-hero__preview">
+      <div class="mockup" style="height:300px;">
+        <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+        <div class="mockup__bar mockup__bar--wide" style="background:var(--blue)"></div>
+        <div class="mockup__bar mockup__bar--mid" style="background:var(--blue)"></div>
+        <div class="mockup__grid"><i style="background:var(--blue)"></i><i style="background:var(--blue)"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-sections">
+    <div>
+      <div class="detail-block">
+        <h3>Buổi tư vấn diễn ra như thế nào</h3>
+        <p>Trao đổi qua Google Meet hoặc gọi điện, tùy bạn chọn. Không cần chuẩn bị tài liệu trước — chỉ cần biết bạn muốn khách hàng làm được gì trên website của mình.</p>
+      </div>
+      <div class="detail-block">
+        <h3>Sau buổi tư vấn</h3>
+        <p>Bạn sẽ nhận bản đề xuất mẫu website, bảng giá phù hợp và các bước tiếp theo qua email trong vòng 48 giờ.</p>
+      </div>
+    </div>
+
+    <aside class="order-card">
+      <p class="order-card__eyebrow">Chọn lịch hẹn</p>
+      <p class="order-card__price">Miễn phí</p>
+
+      <!-- FORM ĐÃ ĐƯỢC CẬP NHẬT -->
+      <form action="dat-lich-thanh-cong.html" id="booking-form" novalidate>
+        
+        <div class="field">
+          <label for="ho_ten">Họ và tên <span class="text-danger">*</span></label>
+          <input type="text" id="ho_ten" name="ho_ten" placeholder="Nhập họ tên của bạn" required>
+        </div>
+
+        <div class="field">
+          <label for="so_dien_thoai">Số điện thoại <span class="text-danger">*</span></label>
+          <input type="tel" id="so_dien_thoai" name="so_dien_thoai" placeholder="Nhập số điện thoại" required>
+        </div>
+
+        <!-- TRƯỜNG EMAIL THÊM MỚI -->
+        <div class="field">
+          <label for="email">Email <span class="text-danger">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+        </div>
+
+        <div class="field">
+          <label for="linh-vuc">Lĩnh vực kinh doanh</label>
+          <select id="linh-vuc" name="linh-vuc">
+            <option>Quán ăn</option>
+            <option>Cà phê</option>
+            <option>Phòng gym</option>
+            <option>Doanh nghiệp</option>
+            <option>Khác</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="ngay-hen">Ngày mong muốn <span class="text-danger">*</span></label>
+          <input type="date" id="ngay-hen" name="ngay-hen" required>
+        </div>
+
+        <div class="field">
+          <label for="gio-hen">Khung giờ</label>
+          <select id="gio-hen" name="gio-hen">
+            <option>09:00 – 09:45</option>
+            <option>10:30 – 11:15</option>
+            <option>14:00 – 14:45</option>
+            <option>16:00 – 16:45</option>
+          </select>
+        </div>
+
+        <!-- TRƯỜNG GHI CHÚ THÊM MỚI -->
+        <div class="field">
+          <label for="ghi_chu">Yêu cầu tư vấn (Tùy chọn)</label>
+          <textarea id="ghi_chu" name="ghi_chu" rows="4" placeholder="Nhập nội dung bạn cần tư vấn..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary w-100">Xác nhận đặt lịch</button>
+      </form>
+      <!-- END FORM -->
+
+      <p class="order-card__fine">Chúng tôi sẽ gọi hoặc gửi email xác nhận trong vòng 1 ngày làm việc.</p>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="nav__brand-mark">PM</span>
+      <p>Studio thiết kế và xây dựng website cho quán ăn, quán cà phê, phòng gym và doanh nghiệp nhỏ. Chọn mẫu, tùy chỉnh riêng, sẵn sàng vận hành.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Website theo ngành</h4>
+      <a href="../index.html#mau-rap" class="footer__link">Quán ăn</a>
+      <a href="../index.html#mau-rap" class="footer__link">Cà phê</a>
+      <a href="../index.html#mau-rap" class="footer__link">Phòng gym</a>
+      <a href="../index.html#mau-rap" class="footer__link">Doanh nghiệp</a>
+    </div>
+    <div class="footer__col">
+      <h4>Dịch vụ</h4>
+      <a href="dat-lich.html" class="footer__link">Tư vấn 1-1</a>
+      <a href="../index.html#bang-gia" class="footer__link">Bảng giá</a>
+      <a href="../index.html#da-may" class="footer__link">Những website đã được triển khai</a>
+    </div>
+    <div class="footer__col">
+      <h4>Tài khoản</h4>
+      <a href="../dang-nhap.html" class="footer__link">Đăng nhập khách hàng</a>
+      <a href="../quan-tri/dang-nhap.html" class="footer__link">Đăng nhập quản trị</a>
+    </div>
+    <div class="footer__col">
+      <h4>Pháp lý</h4>
+      <a href="../dieu-khoan.html" class="footer__link">Điều khoản dịch vụ</a>
+      <a href="../chinh-sach-bao-mat.html" class="footer__link">Chính sách bảo mật</a>
+      <a href="../chinh-sach-hoan-tien.html" class="footer__link">Chính sách hoàn tiền</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 PM STUDIO. Website số 01.</span>
+    <span>Thiết kế cho riêng doanh nghiệp của bạn, không phải một website dùng cho tất cả.</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="../ui.js"></script>
+<script src="dat-lich.js"></script>
+</body>
+</html>
